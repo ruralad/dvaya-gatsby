@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Node.js (TypeScript) API',
+    title: 'Dvaya | Sfi Gec Idukki',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatsby + Node.js (TypeScript) API',
-        short_name: 'Gatsby + Node.js (TypeScript)',
+        name: 'Dvaya Sfi Gec Idukki',
+        short_name: 'Dvaya',
         start_url: '/',
-        icon: 'src/images/gatsby-icon.png',
+        icon: 'src/images/dvayaLogo.webp',
       },
     },
   ],

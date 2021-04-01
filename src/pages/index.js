@@ -1,12 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
-import '../styles/index.css';
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+
+import Navbar from "../../components/navbar";
+
+import "../styles/index.css";
+import "../styles/navbar.css";
+
+import backgroundImage from "../images/college_frontview_compressed.webp";
 
 function Index() {
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
-      const res = await fetch('/api/date');
+      const res = await fetch("/api/date");
       const newDate = await res.text();
       setDate(newDate);
     }
@@ -15,40 +21,16 @@ function Index() {
   return (
     <main>
       <Helmet>
-        <title>Gatsby + Node.js (TypeScript) API</title>
+        <title>Dvaya | Sfi Gec Idukki</title>
       </Helmet>
-      <h1>Gatsby + Node.js (TypeScript) API</h1>
-      <h2>
-        Deployed with{' '}
-        <a
-          href="https://vercel.com/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Vercel
-        </a>
-        !
-      </h2>
-      <p>
-        <a
-          href="https://github.com/vercel/vercel/tree/master/examples/gatsby"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          This project
-        </a>{' '}
-        is a <a href="https://www.gatsbyjs.org/">Gatsby</a> app with two
-        directories, <code>/src</code> for static content and <code>/api</code>{' '}
-        which contains a serverless{' '}
-        <a href="https://nodejs.org/en/">Node.js (TypeScript)</a> function. See{' '}
-        <a href="/api/date">
-          <code>api/date</code> for the Date API with Node.js (TypeScript)
-        </a>
-        .
-      </p>
-      <br />
-      <h2>The date according to Node.js (TypeScript) is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
+      <img
+        className="background-image"
+        alt="college-frontview"
+        src={backgroundImage}
+      />
+      <Navbar />
+
+      <p>{date ? date : "Loading date..."}</p>
     </main>
   );
 }
