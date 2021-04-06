@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+
 :root {
-  --nav-TextColor: rgb(241, 241, 241);
-  --nav-DropBG: rgb(252, 252, 252);
-  --nav-DropTextColor: rgb(44, 44, 44);
+  --nav-TextColor: #ffffff;
+  --nav-DropBG: #b40000;
+  --nav-DropTextColor: #141414;
 }
 
 #navBar {
@@ -64,6 +67,7 @@ html {
   width: 30px;
   height: 22px;
   vertical-align: middle;
+  cursor: pointer;
   margin-top: 3px;
 }
 
@@ -77,7 +81,6 @@ html {
   background: var(--nav-DropBG);
   display: block;
   content: "";
-  cursor: pointer;
 }
 #nav-open span:before {
   bottom: -8px;
@@ -112,7 +115,7 @@ html {
   background-size: 500%;
   background-position: 60% 15%;
   transition: 0.3s ease-in-out;
-  background-color: aliceblue;
+  background-color: #ffffff;
   -webkit-transform: translateX(105%);
   transform: translateX(105%);
   font-size: 16px;

@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
-import Navbar from "../../components/navbar";
+import Navbar from "../components/navbar";
 
-import "../styles/index.css";
-import "../styles/navbar.css";
+import style from "../styles/index.module.css";
 
 import backgroundImage from "../images/college_frontview_compressed.webp";
 
@@ -24,13 +23,28 @@ function Index() {
         <title>Dvaya | Sfi Gec Idukki</title>
       </Helmet>
       <img
-        className="background-image"
+        className={style.background_image}
         alt="college-frontview"
         src={backgroundImage}
       />
       <Navbar />
-
-      <p>{date ? date : "Loading date..."}</p>
+      <section>
+  
+        <h1>തുടങ്ങാൻ ഇതിലും നല്ല സ്ഥലം വേറെ ഇല്ല</h1>
+      </section>
+      {/* <footer>
+      <div>
+        <img
+          className="sfilogo"
+          src={sfilogo}
+          alt="sfigeciLogo"
+        />
+        <p>
+          Students Federation of India <br />
+          GECI Unit
+        </p>
+      </div>
+    </footer> */}
     </main>
   );
 }

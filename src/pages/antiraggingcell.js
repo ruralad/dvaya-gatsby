@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
-import Navbar from "../../components/navbar";
+import Navbar from "../components/navbar";
 
 
 function Index() {

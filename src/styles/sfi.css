@@ -1,0 +1,238 @@
+body .button-section,
+.container,
+.container .head-rectangle,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  color: #636363;
+  overflow-x: hidden;
+}
+
+body #pageBg {
+  width: 100%;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+body #pageBg #firstWave {
+  stroke: #ff0000;
+  animation: glow 20s infinite alternate;
+}
+
+body #pageBg #secondWave {
+  animation: glow 20s infinite alternate-reverse;
+  stroke: #ff0000;
+}
+
+body #pageBg #thirdWave {
+  animation: glow 20s infinite alternate;
+  stroke: #ff0000;
+}
+
+body .button-section {
+  position: relative;
+  width: 70vw;
+  height: auto;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 3em 0 3em 0;
+}
+
+body .button-section button {
+  width: 11em;
+  height: 2em;
+  border: none;
+  border-radius: 0.7em;
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  outline: none;
+  transition: color, box-shadow 0.3s ease-in;
+}
+
+body .button-section button:hover {
+  border: 1px solid #80808069;
+}
+
+body .button-section .active {
+  color: #ff0000;
+  box-shadow: 0px 2px 5px 0px #727272bf;
+}
+
+body .button-section .active:hover {
+  border: none;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.7;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.container {
+  position: relative;
+  flex-direction: column;
+}
+
+.container .head-rectangle {
+  position: relative;
+  width: 40vw;
+  height: 20em;
+  border-radius: 1em;
+  background-color: #ff0000;
+  background-size: 100%;
+  margin: 5em auto;
+}
+
+.container .head-rectangle:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url("/assets/sfi.webp");
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  border-radius: 1em;
+  background-size: cover;
+}
+
+.container .head-rectangle h1 {
+  position: relative;
+  font-size: 7rem;
+  color: white;
+}
+
+.container article {
+  width: 60vw;
+  text-align: left;
+  margin: 1em;
+  border: 2px solid #ff0000;
+  border-radius: 1em;
+  animation: showSlowly 1s ease-in;
+}
+
+.container article p {
+  margin: 1em;
+  letter-spacing: 0.1px;
+}
+
+.container .programs {
+  margin: 2em;
+}
+
+.container .programs p {
+  margin: 1em 0 0 0;
+}
+
+.container .contents {
+  margin: 2em;
+  text-align: center;
+}
+
+.container .contents h1 {
+  margin-bottom: 2em;
+}
+
+@keyframes showSlowly {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  padding: 1em;
+  height: fit-content;
+  flex-direction: column;
+}
+
+footer .about {
+  width: 100%;
+  height: 2em;
+  text-align: center;
+}
+
+footer .about p {
+  margin-bottom: 1em;
+  padding: 0;
+  height: max-content;
+}
+
+footer img {
+  width: 5em;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  body #pageBg {
+    display: none;
+  }
+  body .button-section {
+    margin: 0 0 3em 0;
+    flex-direction: column;
+    height: 7em;
+    justify-content: space-between;
+  }
+  body .button-section button {
+    font-size: 12px;
+  }
+  body footer {
+    flex-direction: row-reverse;
+    height: fit-content;
+    padding: 0.5em;
+  }
+  body footer .about {
+    width: 100%;
+    text-align: center;
+  }
+  body footer .about p {
+    padding: 0;
+    height: max-content;
+    width: max-content;
+  }
+  .container .head-rectangle {
+    width: 80vw;
+    height: 10em;
+    background-color: black;
+  }
+  .container .head-rectangle h1 {
+    font-size: 3rem;
+  }
+  .container article {
+    width: 90%;
+  }
+}
