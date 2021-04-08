@@ -117,7 +117,7 @@ body .button-section .active:hover {
   width: 100%;
   height: 100%;
   opacity: 0.3;
-  background-image: url("/assets/sfi.webp");
+  background-image: url("../images/sfi.webp");
   background-repeat: no-repeat;
   background-position: 50% 40%;
   border-radius: 1em;
