@@ -53,7 +53,7 @@ class Index extends React.Component {
                   <section className={style.blog_contents}>
                     <h3 className={style.blog_title}>{data.title}</h3>
                     <div className={style.blog_info}>
-                      Post {this.state.blog.length - key} • {data.author}
+                      Post {this.state.blog.length - key} • {data.date} • {data.author}
                     </div>
                     <p className={style.blog_text}>{data.text}</p>
                   </section>
