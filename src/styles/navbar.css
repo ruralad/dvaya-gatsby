@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap");
 
 :root {
   --nav-TextColor: #ffffff;
@@ -13,6 +14,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  top: 0;
 }
 a {
   text-decoration: none;
@@ -218,10 +220,58 @@ footer p {
   #dvayaBox span {
     font-size: 7px;
   }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    padding: 1em;
+    height: fit-content;
+    flex-direction: column;
+  }
 
-  footer p {
-    font-size: 0.7rem;
-    text-align: left;
-    margin: 4%;
+  footer .about {
+    width: 100%;
+    height: 2em;
+    text-align: center;
+  }
+
+  footer .about p {
+    margin-bottom: 1em;
+    padding: 0;
+    height: max-content;
+  }
+
+  footer img {
+    width: 5em;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    flex-direction: row-reverse;
+    height: fit-content;
+    padding: 0.5em;
+  }
+  footer .about {
+    width: 100%;
+    text-align: center;
+  }
+  footer .about p {
+    padding: 0;
+    height: max-content;
+    width: max-content;
+  }
+}
+
+@keyframes showSlowly {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

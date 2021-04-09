@@ -28,7 +28,7 @@ function Index() {
         src={backgroundImage}
       />
       <Navbar />
-      <section>
+      <section className={style.indexsection}>
   
         <h1>തുടങ്ങാൻ ഇതിലും നല്ല സ്ഥലം വേറെ ഇല്ല</h1>
       </section>

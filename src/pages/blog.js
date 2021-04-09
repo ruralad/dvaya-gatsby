@@ -1,44 +1,71 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-// import '../styles/index.css';
+import React from "react";
+import { Helmet } from "react-helmet";
 
-function Index() {
+import Navbar from "../components/navbar";
+import Footer from "../components/pageFooter";
+
+import style from "../styles/blog.module.css";
+
+function Loading(props) {
   return (
-    <main>
-      <Helmet>
-        <title>Gatsby + Node.js (TypeScript) API</title>
-      </Helmet>
-      <h1>Gatsby + Node.js (TypeScript) API</h1>
-      <h2>
-        Deployed with{' '}
-        <a
-          href="/sfi"
-        >
-          Vercel
-        </a>
-        !
-      </h2>
-      <p>
-        <a
-          href="https://github.com/vercel/vercel/tree/master/examples/gatsby"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          This project
-        </a>{' '}
-        is a <a href="https://www.gatsbyjs.org/">Gatsby</a> app with two
-        directories, <code>/src</code> for static content and <code>/api</code>{' '}
-        which contains a serverless{' '}
-        <a href="https://nodejs.org/en/">Node.js (TypeScript)</a> function. See{' '}
-        <a href="/api/date">
-          <code>api/date</code> for the Date API with Node.js (TypeScript)
-        </a>
-        .
-      </p>
-      <br />
-      <h2>The date according to Node.js (TypeScript) is:</h2>
-    </main>
+    <div className={style.blog_loading}>
+      <h1 className={style.loading_head}>SFI BLOG</h1>
+      <p className={style.load_state}>{props.loadState}</p>
+    </div>
   );
+}
+class Index extends React.Component {
+  state = {
+    loading: true,
+    blog: null,
+  };
+
+  async componentDidMount() {
+    const url = "https://dvayablog.herokuapp.com/api/allblogs";
+    const response = await fetch(url, { method: "get", mode: "cors" });
+    const data = await response.json();
+    this.setState({ blog: data, loading: false });
+
+    console.log(this.state.blog);
+  }
+  render() {
+    if (this.state.loading) {
+      return <Loading loadState="loading..." />;
+    }
+
+    if (!this.state.blog) {
+      return <Loading loadState="couldn't reach the server" />;
+
+    }
+    if (this.state.blog) {
+      const newBlog = this.state.blog.reverse();
+      return (
+        <main>
+          <Helmet>
+            <title>Blog | Sfi Geci | Dvaya</title>
+          </Helmet>
+          <Navbar />
+          <div className={style.hero}>
+            <h1 className={style.page_title}>SFI GECI BLOG</h1>
+            {newBlog.map((data, key) => {
+              return (
+                <div className={style.blog_box} id={"post" + key}>
+                  <section className={style.blog_contents}>
+                    <h3 className={style.blog_title}>{data.title}</h3>
+                    <div className={style.blog_info}>
+                      Post {this.state.blog.length - key} • {data.author}
+                    </div>
+                    <p className={style.blog_text}>{data.text}</p>
+                  </section>
+                </div>
+              );
+            })}
+            <Footer />
+          </div>
+        </main>
+      );
+    }
+  }
 }
 
 export default Index;
