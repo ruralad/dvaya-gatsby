@@ -21,7 +21,7 @@ class Index extends React.Component {
   };
 
   async componentDidMount() {
-    const url = "https://dvayablog.herokuapp.com/api/allblogs";
+    const url = "/api/blogcontent";
     const response = await fetch(url, { method: "get", mode: "cors" });
     const data = await response.json();
     this.setState({ blog: data, loading: false });
