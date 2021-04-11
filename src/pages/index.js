@@ -21,6 +21,19 @@ function Index() {
     <main>
       <Helmet>
         <title>Dvaya | Sfi Gec Idukki</title>
+        <meta charset="UTF-8" />
+        <meta name="title" content="Dvaya | Sfi Geci" />
+        <meta
+          name="description"
+          content="Official website of Students Federation Of India Government Engineering College Idukki  Unit."
+        />
+        <meta
+          name="keywords"
+          content="SFI, GECI,Students federation of india, blog, sfi blog, sfi geci blog, sfi geci, sfi protest, gec idukki, government engineering college idukki, dvaya,sfi geci website"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
       </Helmet>
       <img
         className={style.background_image}
@@ -29,7 +42,6 @@ function Index() {
       />
       <Navbar />
       <section className={style.indexsection}>
-  
         <h1>തുടങ്ങാൻ ഇതിലും നല്ല സ്ഥലം വേറെ ഇല്ല</h1>
       </section>
       {/* <footer>

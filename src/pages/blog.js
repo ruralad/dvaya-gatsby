@@ -47,6 +47,27 @@ class Index extends React.Component {
         <main>
           <Helmet>
             <title>Blog | Sfi Geci | Dvaya</title>
+            <meta charset="UTF-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+            <title>Blog | Sfi Geci | Dvaya</title>
+            <meta name="title" content="Blog | Dvaya Sfi Geci" />
+            <meta
+              name="description"
+              content="Read the latest posts from SFI GEC Idukki Unit on the Dvaya Blog."
+            />
+            <meta
+              name="keywords"
+              content="SFI, GECI,Students federation of india, blog, sfi blog, sfi geci blog, sfi geci, sfi protest, gec idukki, government engineering college idukki"
+            />
+            <meta name="robots" content="index, follow" />
+            <meta
+              http-equiv="Content-Type"
+              content="text/html; charset=utf-8"
+            />
+            <meta name="language" content="English" />
           </Helmet>
           <Navbar />
           <div className={style.hero}>
