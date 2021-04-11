@@ -1,0 +1,85 @@
+.notebank_container {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 15px;
+}
+.notebank_box {
+  height: max-content;
+}
+.notebank_head {
+  font-size: 3em;
+  color: #1e1e1e;
+}
+.notebank_head::after {
+  display: block;
+  content: "as of now only first year materials are available";
+  font-size: 15px;
+
+  font-weight: lighter;
+}
+.notebank_yearbox {
+  position: relative;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  margin-top: 40px;
+}
+.notebox {
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid red;
+  display: grid;
+  place-items: center;
+}
+.activebox {
+  font-weight: bold;
+  border-color: green;
+  cursor: pointer;
+}
+.activebox:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+
+/* 404page */
+
+.fourhead {
+  font-size: 3em;
+  color: #1e1e1e;
+}
+.fourhead::after {
+  display: block;
+  content: "the page you were looking for might have been removed or didn't exist at the first place";
+  font-size: 15px;
+  margin-top: 20px;
+  max-width: 80vw;
+  color: grey;
+  font-weight: lighter;
+}
+.gobutton {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.goback {
+  display: block;
+  margin: 30px;
+  border: 2px solid red;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+}
+.goback:hover {
+  background: red;
+  color: white;
+  transform: scale(1.2);
+  transition: all 1s ease;
+}

@@ -8,10 +8,15 @@ import style from "../styles/blog.module.css";
 
 function Loading(props) {
   return (
-    <div className={style.blog_loading}>
-      <h1 className={style.loading_head}>SFI BLOG</h1>
-      <p className={style.load_state}>{props.loadState}</p>
-    </div>
+    <main>
+      <Helmet>
+        <title>{props.loadState}</title>
+      </Helmet>
+      <div className={style.blog_loading}>
+        <h1 className={style.loading_head}>SFI BLOG</h1>
+        <p className={style.load_state}>{props.loadState}</p>
+      </div>
+    </main>
   );
 }
 class Index extends React.Component {
@@ -35,7 +40,6 @@ class Index extends React.Component {
 
     if (!this.state.blog) {
       return <Loading loadState="couldn't reach the server" />;
-
     }
     if (this.state.blog) {
       const newBlog = this.state.blog.reverse();
@@ -53,7 +57,8 @@ class Index extends React.Component {
                   <section className={style.blog_contents}>
                     <h3 className={style.blog_title}>{data.title}</h3>
                     <div className={style.blog_info}>
-                      Post {this.state.blog.length - key} • {data.date} • {data.author}
+                      Post {this.state.blog.length - key} • {data.date} •{" "}
+                      {data.author}
                     </div>
                     <p className={style.blog_text}>{data.text}</p>
                   </section>

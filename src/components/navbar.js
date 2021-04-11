@@ -5,6 +5,7 @@ import "../styles/navbar.css";
 import dvayaLogo from "../images/dvayaLogo.webp";
 import instaLogo from "../images/instagram.svg";
 import fbLogo from "../images/facebook.svg";
+import { Link } from "gatsby";
 
 class Navbar extends React.Component {
   gotoPage(togolink) {
@@ -40,19 +41,19 @@ class Navbar extends React.Component {
             <div id="nav-content">
               <ul>
                 <li>
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li className="sfi">
-                  <a href="/sfi">Sfi Geci</a>
+                  <Link to="/sfi">Sfi Geci</Link>
                 </li>
                 <li className="sfi">
-                  <a href="/notebank">Notebank</a>
+                  <Link to="/notebank">Notebank</Link>
                 </li>
                 <li>
-                  <a href="/blog">Blog</a>
+                  <Link to="/blog">Blog</Link>
                 </li>
                 <li>
-                  <a href="/antiraggingcell">Anti-Ragging Cell</a>
+                  <Link to="/antiraggingcell">Anti-Ragging Cell</Link>
                 </li>
               </ul>
               <div className="bottom">

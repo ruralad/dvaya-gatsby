@@ -59,7 +59,7 @@
   border: 1px solid #1e1e1e;
   border-radius: 5px;
   font-family: "Manjari", sans-serif;
-  width: 80%;
+  width: clamp(300px, 50%, 800px);
   height: auto;
   animation: showSlowly 1.5s ease-in;
 }
@@ -83,6 +83,6 @@
   position: relative;
   margin: 0 0 20px 0;
   padding: 0;
-  width: 70vw;
+  width: 95%;
   letter-spacing: 0.1px;
 }
