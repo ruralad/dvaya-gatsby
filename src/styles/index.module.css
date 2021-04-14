@@ -8,7 +8,7 @@ body {
   font-size: 15px;
   color: white;
 }
-main {
+.containermain {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -46,5 +46,26 @@ main {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-800px);
+  }
+}
+@media (max-width: 480px) {
+  .containermain {
+    max-height: 100vh;
+    overflow-y: hidden;
+  }
+  .background_image {
+    overflow-y: hidden;
+    height: 100vh;
+    width: 1300px;
+    animation: leftToRight 45s linear alternate-reverse;
   }
 }

@@ -2,10 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap");
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 :root {
   --nav-TextColor: #ffffff;
   --nav-DropBG: #b40000;
   --nav-DropTextColor: #141414;
+}
+
+.blackit {
+  color: black;
 }
 
 #navBar {
@@ -28,7 +35,6 @@ html {
   display: flex;
   flex-direction: row;
   font-size: 10px;
-  color: var(--nav-TextColor);
   left: 10px;
   top: 5px;
   z-index: 99;

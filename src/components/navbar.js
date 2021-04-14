@@ -10,18 +10,24 @@ import { Link } from "gatsby";
 class Navbar extends React.Component {
   gotoPage(togolink) {
     if (togolink == "insta") {
-      window.open("https://instagram.com/sfigeci","_blank")
-    }
-    else{
-      window.open("https://www.facebook.com/SFIGECIunit","_blank");
+      window.open("https://instagram.com/sfigeci", "_blank");
+    } else {
+      window.open("https://www.facebook.com/SFIGECIunit", "_blank");
     }
   }
   render() {
+    let navColor = "white";
+    if (this.props.textcolor == "black") {
+      navColor = "black";
+    }
     return (
       <div id="navBar">
         <div id="dvayaBox" className={this.props.navtheme}>
-          <img src={dvayaLogo} alt="DvayaLogo" />
-          <span>
+          <Link to="/">
+            <img src={dvayaLogo} alt="DvayaLogo" />
+          </Link>
+
+          <span style={{ color: navColor }}>
             DVAYA <br />
             Portal To Geci
             <br />

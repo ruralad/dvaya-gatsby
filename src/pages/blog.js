@@ -35,7 +35,36 @@ class Index extends React.Component {
   }
   render() {
     if (this.state.loading) {
-      return <Loading loadState="loading..." />;
+      return (
+        <main>
+          <Loading loadState="loading..." />
+          );
+          <Helmet>
+            <title>Blog | Sfi Geci | Dvaya</title>
+            <meta charset="UTF-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+            <title>Blog | Sfi Geci | Dvaya</title>
+            <meta name="title" content="Blog | Dvaya Sfi Geci" />
+            <meta
+              name="description"
+              content="Read the latest posts from SFI GEC Idukki Unit on the Dvaya Blog."
+            />
+            <meta
+              name="keywords"
+              content="SFI, GECI,Students federation of india, blog, sfi blog, sfi geci blog, sfi geci, sfi protest, gec idukki, government engineering college idukki"
+            />
+            <meta name="robots" content="index, follow" />
+            <meta
+              http-equiv="Content-Type"
+              content="text/html; charset=utf-8"
+            />
+            <meta name="language" content="English" />
+          </Helmet>
+        </main>
+      );
     }
 
     if (!this.state.blog) {
@@ -69,7 +98,7 @@ class Index extends React.Component {
             />
             <meta name="language" content="English" />
           </Helmet>
-          <Navbar />
+          <Navbar textcolor="black"/>
           <div className={style.hero}>
             <h1 className={style.page_title}>SFI GECI BLOG</h1>
             {newBlog.map((data, key) => {

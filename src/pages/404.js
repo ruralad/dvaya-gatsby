@@ -12,7 +12,7 @@ function Index() {
       <Helmet>
         <title>404 | Dvaya</title>
       </Helmet>
-      <Navbar />
+      <Navbar textcolor="black" />
       <div className={style.notebank_container}>
         <div className={style.notebank_box}>
           <h1 className={style.fourhead}>Oops! 😢</h1>

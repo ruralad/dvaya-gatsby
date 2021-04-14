@@ -18,7 +18,7 @@ function Index() {
     getDate();
   }, []);
   return (
-    <main>
+    <main className={style.containermain}>
       <Helmet>
         <title>Dvaya | Sfi Gec Idukki</title>
         <meta charset="UTF-8" />
