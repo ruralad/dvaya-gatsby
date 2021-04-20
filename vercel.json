@@ -3,7 +3,8 @@
     "silent": true
   },
   "env": {
-    "MONGODB_URI": "@mongodburl"
+    "MONGODB_URI": "@mongodburl",
+    "IPLEVENT_PWORD" : "@ipleventpword"
   },
   "headers": [
     {
