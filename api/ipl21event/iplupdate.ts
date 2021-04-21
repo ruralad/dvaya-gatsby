@@ -71,6 +71,7 @@ const tableSchema = new Schema(
 const IplTable = mongoose.model("IplTable", tableSchema);
 
 export default (req: VercelRequest, res: VercelResponse) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
   const { body } = req;
   const newBody = JSON.parse(body);
   if (newBody.pword == process.env.IPLEVENT_PWORD) {
