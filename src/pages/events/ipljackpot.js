@@ -2,6 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 import Navbar from "../../components/navbar";
+import Footer from "../../components/pageFooter";
+
 import { Link } from "gatsby";
 import { render } from "react-dom";
 
@@ -109,7 +111,9 @@ class Index extends React.Component {
               </tr>
             </tbody>
           </table>
+
         </main>
+        
       );
     }
   }

@@ -61,6 +61,9 @@ class Navbar extends React.Component {
                 <li>
                   <Link to="/antiraggingcell">Anti-Ragging Cell</Link>
                 </li>
+                <li>
+                  <Link className="eventstext" to="/events">Events</Link>
+                </li>
               </ul>
               <div className="bottom">
                 <img

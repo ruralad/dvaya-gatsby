@@ -186,6 +186,22 @@ footer p {
   margin-top: 20px;
 }
 
+.eventstext {
+  color: #f35626;
+  background-image: -webkit-linear-gradient(90deg, #ca26f3, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 4s infinite linear;
+}
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
 @keyframes showDropdown {
   0% {
     transform: scaleY(0);
