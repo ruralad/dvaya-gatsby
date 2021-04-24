@@ -6,7 +6,7 @@
 }
 .iplheader {
   font-size: 1.5em;
-  margin-bottom: -3em;
+  margin-bottom: -2em;
 }
 .tableCont {
   width: 100%;
@@ -20,6 +20,9 @@
 .tableHead {
   padding: 10px;
 }
+.trow {
+  height: 30px;
+}
 .trow:nth-child(even) {
   background-color: #f1f1f1;
 }
@@ -28,5 +31,5 @@
   text-align: center;
 }
 .tcell {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
