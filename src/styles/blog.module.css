@@ -100,7 +100,7 @@
   .page_title {
     font-size: 30px;
     width: 100%;
-    margin: 50px 0 0 20%;
+    margin: 50px 0 0 50px;
     text-align: left;
   }
   .page_title::after {

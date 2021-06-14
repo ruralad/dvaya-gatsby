@@ -4,6 +4,7 @@
   },
   "env": {
     "MONGODB_URI": "@mongodburl",
+    "MONGODB_URI2": "@mongodburl2",
     "IPLEVENT_PWORD" : "@ipleventpword"
   },
   "headers": [

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 import Navbar from "../components/navbar";
+import NotificationBar from "../components/notificationbar";
 
 import style from "../styles/index.module.css";
 
@@ -40,6 +41,8 @@ function Index() {
         alt="college-frontview"
         src={backgroundImage}
       />
+
+      <NotificationBar />
       <Navbar />
       <section className={style.indexsection}>
         <h1>തുടങ്ങാൻ ഇതിലും നല്ല സ്ഥലം വേറെ ഇല്ല</h1>

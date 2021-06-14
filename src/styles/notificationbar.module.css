@@ -1,0 +1,18 @@
+.not_container {
+  /* display: none ; */
+  position: relative;
+  width: 100vw;
+  height: 30px;
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: black;
+
+  cursor: pointer;
+}
+.not_container a {
+  color: black;
+  font-weight: normal;
+}

@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding-left: 5%;
+  text-align: center;
+}
+.heading1 {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(45deg, rgb(6, 87, 134), rgb(34, 163, 23));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
