@@ -54,7 +54,7 @@ class Bloodbank extends React.Component {
     this.setState({ finalise: true });
     event.preventDefault();
 
-    fetch("api/bloodbankupdate", {
+    fetch("/api/bloodbankupdate", {
       method: "POST",
       mode: "no-cors",
       headers: { "Content-Type": "application/json;charset=utf-8" },
