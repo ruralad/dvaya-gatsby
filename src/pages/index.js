@@ -42,7 +42,7 @@ function Index() {
         src={backgroundImage}
       />
 
-      <NotificationBar />
+      {/* <NotificationBar /> */}
       <Navbar />
       <section className={style.indexsection}>
         <h1>തുടങ്ങാൻ ഇതിലും നല്ല സ്ഥലം വേറെ ഇല്ല</h1>
