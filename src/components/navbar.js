@@ -49,9 +49,9 @@ class Navbar extends React.Component {
                 <li>
                   <Link to="/">Home</Link>
                 </li>
-                <li className="sfi">
+                {/* <li className="sfi">
                   <Link to="/sfi">Sfi Geci</Link>
-                </li>
+                </li> */}
                 <li className="sfi">
                   <Link to="/notebank">Notebank</Link>
                 </li>
@@ -73,7 +73,7 @@ class Navbar extends React.Component {
                   src={fbLogo}
                   onClick={(e) => this.gotoPage("fb")}
                 />
-                <p>Dvaya, from Sfi Geci</p>
+                {/* <p>Dvaya, from Sfi Geci</p> */}
               </div>
             </div>
           </div>
