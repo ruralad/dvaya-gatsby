@@ -80,7 +80,7 @@ class Index extends React.Component {
           <div className={style.container}>
             <div className={style.head}>
               <h1 className={style.heading1}>വൃദ്ധി</h1>
-              <p className={style.heading1_subtitle}>online kalotsavam</p>
+              <p className={style.heading1_subtitle}>all results</p>
             </div>
             <div className={style.content}>
               {data2.map((data, key) => {
