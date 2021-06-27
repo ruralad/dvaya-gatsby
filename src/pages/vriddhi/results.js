@@ -118,9 +118,6 @@ class Index extends React.Component {
                 })}{" "}
                 {updatedDate.toLocaleTimeString()}
               </p>
-              <p style={{ color: "#9e9e9e" }}>
-                Managed By <span style={{ color: "#b40000" }}>sfi</span>geci
-              </p>
             </div>
           </div>
         </main>
