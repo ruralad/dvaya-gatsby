@@ -146,7 +146,7 @@ td {
 @media (min-width: 500px) {
   .content {
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     margin: 30px;
     justify-content: space-evenly;
   }
