@@ -17,48 +17,48 @@ function Index() {
       <section className={style.section}>
         <ul className={style.ul}>
           <li className={style.li}>
-            Athul Raj K <span>S8 ME</span>
-            <a className={style.a} href="tel:+9181296 97119">81296 97119 </a>
+            Shamseer K P <span>S7 ME</span>
+            <a className={style.a} href="tel:+9179026 30020">79026 30020 </a>
           </li>
           <li className={style.li}>
-            Abhijith P A <span>S8 EC</span>
-            <a className={style.a} href="tel:+9185477 74007">85477 74007 </a>
+            Athul T Sunil <span>S7 IT</span>
+            <a className={style.a} href="tel:+9170257 49051">70257 49051 </a>
           </li>
           <li className={style.li}>
-            Adarsh Murali <span>S8 CS</span>
-            <a className={style.a} href="tel:+9195673 71256">95673 71256 </a>
+            Havin K H <span>S7 IT</span>
+            <a className={style.a} href="tel:+9175618 61232">75618 61232 </a>
           </li>
           <li className={style.li}>
-            Jinsha Becker <span>S8 IT</span>
-            <a className={style.a} href="tel:+9183049 09689">83049 09689 </a>
+            Binay Binu <span>S7 EC </span>
+            <a className={style.a} href="tel:+9170257 49051">70257 49051 </a>
           </li>
           <li className={style.li}>
-            Abhijith K <span>S8 CS</span>
-            <a className={style.a} href="tel:+9195267 27913">95267 27913 </a>
-          </li>
-          <li className={style.li}>
-            Sruthy V S <span>S8 EEE</span>
-            <a className={style.a} href="tel:+9196567  30623">96567 30623</a>
-          </li>
-          <li className={style.li}>
-            Athuljith T Sunil <span>S6 IT</span>
-            <a className={style.a} href="tel:+9195261 81296">95261 81296 </a>
-          </li>
-          <li className={style.li}>
-            Sruthymol <span>S6 CS</span>
+            Sruthymol <span>S7 CS</span>
             <a className={style.a} href="tel:+9191888 37549">91888 37549 </a>
           </li>
           <li className={style.li}>
-            Aswin Raphael <span>S6 EEE</span>
-            <a className={style.a} href="tel:+9197464 01067">97464 01067 </a>
+            Bineesh B S<span>S7 EEE</span>
+            <a className={style.a} href="tel:+9181298 76370">81298 76370</a>
           </li>
           <li className={style.li}>
-            Delan V S <span>S4 EC</span>
-            <a className={style.a} href="tel:+9180781 46721">80781 46721 </a>
+            Goutham Krishna S<span>S5 CS</span>
+            <a className={style.a} href="tel:+9199466 70433">99466 70433 </a>
           </li>
           <li className={style.li}>
-            Nihal S J <span>S4 ME</span>
-            <a className={style.a} href="tel:+9181380 94784">81380 94784 </a>
+            Gokul Krishna<span>S5 IT</span>
+            <a className={style.a} href="tel:+9175899 16635">75899 16635 </a>
+          </li>
+          <li className={style.li}>
+            Bhavya R Krishna<span>S5 EEE</span>
+            <a className={style.a} href="tel:+9179026 30020">79026 30020 </a>
+          </li>
+          <li className={style.li}>
+            Ashlin George<span>S3 EEE</span>
+            <a className={style.a} href="tel:+9162389 30115">62389 30115 </a>
+          </li>
+          <li className={style.li}>
+            Thertha D<span>S3 IT</span>
+            <a className={style.a} href="tel:+9179026 30020">79026 30020</a>
           </li>
         </ul>
       </section>
