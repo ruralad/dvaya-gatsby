@@ -50,15 +50,15 @@ function Index() {
           </li>
           <li className={style.li}>
             Bhavya R Krishna<span>S5 EEE</span>
-            <a className={style.a} href="tel:+9179026 30020">79026 30020 </a>
+            <a className={style.a} href="tel:+9182813 31889">82813 31889 </a>
           </li>
           <li className={style.li}>
             Ashlin George<span>S3 EEE</span>
             <a className={style.a} href="tel:+9162389 30115">62389 30115 </a>
           </li>
           <li className={style.li}>
-            Thertha D<span>S3 IT</span>
-            <a className={style.a} href="tel:+9179026 30020">79026 30020</a>
+            Theertha D<span>S3 IT</span>
+            <a className={style.a} href="tel:+9183048 98295">83048 98295</a>
           </li>
         </ul>
       </section>
